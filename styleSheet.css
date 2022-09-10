@@ -10,10 +10,10 @@ Color Scheme
 */
 
 header {
-    position: sticky;
+    position: fixed;
     display: flex;
-    height: 7vh;
-    padding: 0% 12%;
+    height: 9vh;
+    padding: 0% 8%;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -53,8 +53,10 @@ body {
 }
 
 section {
-    width: 80%;
-    height: 93vh;
+    width: 600px;
+    height: 81vh;
+    margin: 0px;
+    padding-top: 20vh;
     margin-left: auto;
     margin-right: auto;
 }
