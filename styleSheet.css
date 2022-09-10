@@ -43,7 +43,6 @@ a {
 
 a:hover {
     color:#f16c6f;
-    
 }
 
 section a {
@@ -89,7 +88,6 @@ p a {
 
 p a:hover {
     color:#f16c6f;
-    
 }
 
 .contact {
@@ -97,5 +95,4 @@ p a:hover {
     margin: 0px;
     margin-left: auto;
     margin-right: auto;
-
 }
