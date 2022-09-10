@@ -12,7 +12,7 @@ Color Scheme
 header {
     position: fixed;
     display: flex;
-    height: 9vh;
+    height: 7vh;
     padding: 0% 8%;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +24,7 @@ header {
  }
 
 nav {
-    width: 60%;
+    width: 70%;
 }
 
 nav ol {
@@ -46,17 +46,56 @@ a:hover {
     
 }
 
+section a {
+    color:#264233;
+}
+
+section a:hover {
+    color:#f16c6f;
+    
+}
+
 body {
     color:#0f5c95;
     font-family: 'Roboto Mono', monospace;
     background-color:#ffe3cd;
 }
 
+h4 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
 section {
     width: 600px;
-    height: 81vh;
+    min-height: 100vh;
     margin: 0px;
-    padding-top: 20vh;
+    padding-top: 11vh;
     margin-left: auto;
     margin-right: auto;
+}
+
+.projects p {
+    padding-bottom: 20px;
+}
+
+p a {
+    color:#264233;
+}
+
+p a:hover {
+    color:#f16c6f;
+    
+}
+
+.contact {
+    width: 600px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
