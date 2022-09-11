@@ -9,9 +9,16 @@ Color Scheme
  salmon color:#f16c6f;
 */
 
+.container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
 
-
-header {
+.header {
+    vertical-align: middle;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering:geometricPrecision;
@@ -29,16 +36,18 @@ header {
  }
 
 nav {
-    width: 70%;
+    width: 45%;
+    height: 100%;
 }
 
 nav ol {
-    margin-top: auto;
-    margin-bottom: auto;
+    margin:0;
     display: flex;
+    height: 100%;
+    padding: 9px 0;
     list-style: none;
+    align-items: center;
     justify-content: space-evenly;
-    margin: none;
 }
 
 a {
@@ -56,8 +65,23 @@ section a {
 
 section a:hover {
     color:#f16c6f;
-    
 }
+
+nav ol li {
+    display: flex;
+    align-items: center;
+    height:100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav ol li.active {
+    text-align: center;
+    background-color: #0f5c95;
+    color: black;
+    transition: 0.3s ease background-color;
+}
+
 
 body {
     font-smooth: always;
@@ -80,20 +104,28 @@ h3 {
 h1 {
     text-align: center;
     padding-bottom: 2vh;
-    coloR: black;
+    coloR: rgba(0, 0, 0, 0.623);
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering:geometricPrecision;
 }
 
-section {
+#home {
+    min-height: 100vh;
+}
+
+.subsect {
     width: 600px;
-    min-height: 50vh;
     margin: 0px;
     padding-top: 11vh;
     padding-bottom: 6vh;
     margin-left: auto;
     margin-right: auto;
+}
+
+#last_sect {
+
+    padding-top: 5vh;
 }
 
 .light {
@@ -105,8 +137,17 @@ section {
 }
 
 .grey {
-    background-color:rgba(0, 0, 0, 0.288);
+    background-color:rgb(51, 51, 51);
 }
+
+/*
+Color Scheme
+ green color:#264233;
+ light green color:#869486;
+ cream color:#ffe3cd;
+ blue color:#0f5c95;
+ salmon color:#f16c6f;
+*/
 
 .projects p {
     padding-bottom: 20px;
@@ -121,6 +162,7 @@ p a:hover {
 }
 
 .contact1 {
+    color:#869486;
     text-align: center;
     margin: 0px;
     margin-left: auto;
@@ -128,12 +170,28 @@ p a:hover {
 }
 
 .contact2 {
+    color:#869486;
     width: 600px;
     margin: 0px;
     margin-left: auto;
     margin-right: auto;
-    min-height: 20vh;
+    display: flex;
+    height: 7vh;
+    padding: 0% 8%;
+    justify-content: space-between;
 }
+.contact3 {
+    color:#869486;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact2 a {
+    color:#869486;
+}
+
 
 .download {
     margin-left: auto;
@@ -151,3 +209,47 @@ p a:hover {
     margin-left: auto;
     margin-right: auto;
 }
+
+.tan {
+    color: #ffe3cd;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 2px;
+    align-items: stretch;
+    background: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: black;
+    margin-top: 0px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+
+  button:hover {
+    cursor: pointer;
+    border-radius: 2px;
+    align-items: stretch;
+    background: #264233;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: white;
+    margin-top: 0px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  /*
+Color Scheme
+ green color:#264233;
+ light green color:#869486;
+ cream color:#ffe3cd;
+ blue color:#0f5c95;
+ salmon color:#f16c6f;
+*/
