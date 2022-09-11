@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 /*
 Color Scheme
  green color:#264233;
@@ -9,7 +9,12 @@ Color Scheme
  salmon color:#f16c6f;
 */
 
+
+
 header {
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering:geometricPrecision;
     position: fixed;
     display: flex;
     height: 7vh;
@@ -55,27 +60,52 @@ section a:hover {
 }
 
 body {
+    font-smooth: always;
     color:#0f5c95;
     font-family: 'Roboto Mono', monospace;
-    background-color:#ffe3cd;
-}
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering:geometricPrecision;
+    }
 
-h4 {
+
+h3 {
     text-align: center;
     padding-bottom: 15px;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering:geometricPrecision;
 }
 
 h1 {
     text-align: center;
+    padding-bottom: 2vh;
+    coloR: black;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering:geometricPrecision;
 }
 
 section {
     width: 600px;
-    min-height: 100vh;
+    min-height: 50vh;
     margin: 0px;
     padding-top: 11vh;
+    padding-bottom: 6vh;
     margin-left: auto;
     margin-right: auto;
+}
+
+.light {
+    background-color: #ffe3cd;
+}
+
+.light_green {
+    background-color:#869486;
+}
+
+.grey {
+    background-color:rgba(0, 0, 0, 0.288);
 }
 
 .projects p {
@@ -90,9 +120,34 @@ p a:hover {
     color:#f16c6f;
 }
 
-.contact {
+.contact1 {
+    text-align: center;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact2 {
     width: 600px;
     margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 20vh;
+}
+
+.download {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.check_it_out {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 15%;
+}
+
+.center {
     margin-left: auto;
     margin-right: auto;
 }
